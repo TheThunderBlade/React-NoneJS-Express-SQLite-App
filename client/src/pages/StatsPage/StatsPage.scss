@@ -1,0 +1,60 @@
+.UserStatisticSection {
+  padding: 0 10% 0 10% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+
+  .table-header-row {
+    .table-header-element {
+      padding: 14px;
+      color: #fff;
+      background: #3A80BA;
+      font-size: 14px;
+      text-align: center;
+
+      box-sizing: border-box;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    }
+  }
+}
+
+.page-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+  .page-link {
+    padding: 10px;
+  }
+
+  img {
+    alignment: center;
+    width: 50%;
+  }
+
+  .flip {
+    transform: scale(-1, 1);
+  }
+}
+
+.tr-links {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 414px) {
+  table {
+    overflow: scroll;
+    display: table-caption;
+
+  }
+}

@@ -1,0 +1,196 @@
+$padding: 0 10% 0 10%;
+
+
+.MainSection {
+  color: white;
+  padding: $padding;
+}
+
+.HeaderWavyBg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 655px;
+    transform: rotateY(180deg);
+  }
+
+  .shape-fill {
+    fill: #255D8B;
+  }
+}
+
+.FooterWavyBg {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: auto;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg{
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 201px;
+  }
+
+  .shape-fill {
+    fill: #255D8B;
+  }
+}
+
+.MainSection__Header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+
+  div {
+    padding: 5%;
+
+    a{
+      padding: 3%;
+      text-decoration: none;
+      background: white;
+      color: #3A80BA;
+      border-radius: 8px;
+    }
+
+  }
+
+  img{
+    width: 321px;
+    height: auto;
+  }
+
+  .TitleText{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .SubtitleText{
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.DescriptionSection {
+  text-align: center;
+  margin-bottom: 5%;
+  h1{
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #7E7E7E;
+  }
+}
+
+.InfoBlock {
+  padding: $padding;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: space-between;
+
+  div{
+    padding: 10%;
+    margin: 2%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 32px;
+
+    h1{
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.FooterEmail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  div  {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+
+  input{
+    border: 3px solid white;
+    padding: 2%;
+    color: black;
+    font-size: 16px;
+  }
+
+  .contacts-input{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  .contacts-button {
+    background: #3A80BA;
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.FooterInfo {
+  color: white;
+  display: flex;
+  padding: $padding;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h3{
+    margin: 90px 0 0 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .HeaderWavyBg{
+    background: #255D8B;
+    height: 100%;
+  }
+
+  .MainSection__Header{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .InfoBlock{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .FooterEmail {
+    div {
+      margin-top: 5%;
+      grid-template-columns: 2.7fr 0.5fr;
+    }
+  }
+
+  .FooterInfo{
+    h3{
+      font-size: 11px;
+    }
+  }
+}

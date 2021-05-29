@@ -1,0 +1,55 @@
+.Header {
+  div {
+    padding: 0 10% 0 10%;
+  }
+
+}
+
+.LogoSection {
+  padding: 1% 10% 1% 10% !important;
+  background: #3A80BA;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.Location {
+  display: flex;
+  flex-direction: row;
+
+  .DisabledLocation {
+    color: #cccc;
+  }
+
+  .ActiveLocation {
+    color: #3A80BA;
+    margin-left: 5px;
+  }
+}
+
+.Footer {
+
+  background: #1C3B55;
+  color: white;
+  padding: 1% 10% 1% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
+  div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  p{
+    margin: 0;
+  }
+}
