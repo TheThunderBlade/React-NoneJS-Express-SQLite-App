@@ -4,14 +4,13 @@ const sqlite3 = require('sqlite3').verbose()
 const path = require('path');
 const cors = require('cors')
 
-app.use(cors());
-
 const PORT = process.env.PORT || config.get('port')
 
 const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+app.use(cors());
 
 const db = new sqlite3.Database('MyDataBase.db', (err) => {
     if (err) {
