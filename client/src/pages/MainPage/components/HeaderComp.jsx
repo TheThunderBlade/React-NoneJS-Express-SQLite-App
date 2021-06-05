@@ -23,7 +23,7 @@ const HeaderComp = () => {
                     <NavLink to='/stats'>Views Stats</NavLink>
                 </div>
 
-                <div>
+                <div className='Img__Block'>
                     <img src={phoneImg} alt="phone"/>
                 </div>
             </div>

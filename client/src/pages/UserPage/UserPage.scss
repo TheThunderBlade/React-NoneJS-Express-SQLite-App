@@ -7,7 +7,7 @@
 
   .UserPart{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
 
     div{
       display: flex;
@@ -15,7 +15,7 @@
       justify-content: flex-end;
 
       img {
-        width: 5%;
+        width: 10%;
         height: auto;
         background: #3A80BA;
         border-radius: 8px;
@@ -92,7 +92,7 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .ChartSection{
     .UserPart{
       grid-template-columns: none;

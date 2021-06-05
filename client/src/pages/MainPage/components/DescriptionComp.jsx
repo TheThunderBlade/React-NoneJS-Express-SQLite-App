@@ -25,9 +25,11 @@ const DescriptionComp = () => {
 
     return (
         <div className='DescriptionSection'>
-            <h1>Why <strong>small business owners <br/> love</strong> AppCo?</h1>
-            <p>Our design projects are fresh and simple and will benefit your business greatly. Learn more about our
-                work!</p>
+            <div className='Description'>
+                <h1>Why <strong>small business owners <br/> love</strong> AppCo?</h1>
+                <p>Our design projects are fresh and simple and will benefit your business greatly. Learn more about our
+                    work!</p>
+            </div>
 
             <div className='InfoBlock'>
                 {infoBlocksData.map((item, index) => (

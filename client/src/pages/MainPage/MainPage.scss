@@ -68,7 +68,7 @@ $padding: 0 10% 0 10%;
   }
 
   img{
-    width: 321px;
+    width: 95%;
     height: auto;
   }
 
@@ -163,7 +163,7 @@ $padding: 0 10% 0 10%;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .HeaderWavyBg{
     background: #255D8B;
     height: 100%;
@@ -172,7 +172,18 @@ $padding: 0 10% 0 10%;
   .MainSection__Header{
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
+
+    .Img__Block {
+      display: flex;
+      justify-content: center;
+    }
+
+    img{
+      margin-top: 15%;
+      width: 65%;
+    }
+
   }
 
   .InfoBlock{

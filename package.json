@@ -4,10 +4,10 @@
   "description": "test-app",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm run start --prefix ../client",
+    "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Denis Rysak",
